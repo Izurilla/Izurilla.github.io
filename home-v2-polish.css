@@ -1,16 +1,134 @@
-/* Ajustes de acabado de la portada v2: más aire en el hero y collage editorial menos agolpado */
-.home2-hero{padding:72px 0 58px}
+/* Portada · collage editorial aprobado */
+.home2-hero{padding:72px 0 58px;background:#fbf8f2}
+.home2-hero:before{opacity:.18}
 .home2-hero-grid{grid-template-columns:1.08fr .92fr;gap:56px}
-.home2-collage{min-height:500px;max-width:520px;width:100%;justify-self:end;overflow:visible}
-.home2-paper-main{right:0;top:28px;width:300px;min-height:365px;padding:36px 32px;transform:rotate(2deg)}
-.home2-paper-main:before{left:30px;right:30px;top:88px;bottom:28px}
-.home2-paper-quote{margin-top:82px;font-size:1.7rem;line-height:1.34}
-.home2-paper-sign{margin-top:46px}
-.home2-paper-note{left:-34px;bottom:20px;width:178px;padding:23px 22px;transform:rotate(-5deg);font-size:1.08rem;line-height:1.42;z-index:3}
-.home2-paper-note:before{left:52px;width:66px}
-.home2-pen{left:38px;top:82px;width:138px;transform:rotate(-24deg)}
-.home2-spark.one{right:-16px;top:4px}
-.home2-spark.two{left:-2px;top:214px}
+
+.home2-collage{
+  position:relative;
+  min-height:410px;
+  max-width:520px;
+  width:100%;
+  justify-self:end;
+  overflow:visible;
+}
+
+/* Círculos suaves de fondo */
+.home2-orb{
+  position:absolute;
+  display:block;
+  border-radius:50%;
+  z-index:0;
+  pointer-events:none;
+}
+.home2-orb-blush{
+  width:178px;
+  height:178px;
+  right:18px;
+  top:28px;
+  background:#f7e7e4;
+}
+.home2-orb-lilac{
+  width:162px;
+  height:162px;
+  left:62px;
+  bottom:30px;
+  background:#eee9f5;
+}
+
+/* Tarjeta principal */
+.home2-paper-main{
+  z-index:3;
+  right:34px;
+  top:55px;
+  width:292px;
+  min-height:190px;
+  padding:28px 28px 26px;
+  transform:rotate(1.7deg);
+  border-radius:18px;
+  border:1px solid #eee6df;
+  background:#fffdfb;
+  box-shadow:0 18px 42px rgba(78,59,64,.08);
+}
+.home2-paper-main:before{display:none}
+.home2-paper-label{
+  font-size:.62rem;
+  letter-spacing:.16em;
+  color:#9c8274;
+  font-weight:600;
+}
+.home2-paper-quote{
+  margin:28px 0 0;
+  max-width:245px;
+  font-family:'Fraunces',Georgia,serif;
+  font-size:1.56rem;
+  line-height:1.18;
+  color:var(--iz-burgundy-deep);
+}
+.home2-paper-sign{
+  display:block;
+  margin-top:20px;
+  color:#c26f78;
+  font-size:1rem;
+}
+
+/* Nota rosa */
+.home2-paper-note{
+  z-index:5;
+  left:18px;
+  top:18px;
+  bottom:auto;
+  width:136px;
+  padding:18px 16px;
+  transform:rotate(-5deg);
+  border:none;
+  border-radius:14px;
+  background:#f5dfe2;
+  box-shadow:none;
+  font-family:inherit;
+  color:#6f4c57;
+}
+.home2-paper-note:before{display:none}
+.home2-paper-note strong{
+  display:block;
+  margin-bottom:8px;
+  font-family:'Fraunces',Georgia,serif;
+  font-size:1.02rem;
+  font-weight:400;
+}
+.home2-paper-note span{
+  display:block;
+  font-size:.7rem;
+  line-height:1.55;
+  color:#765b63;
+}
+
+/* Mini paleta */
+.home2-palette{
+  position:absolute;
+  z-index:4;
+  right:10px;
+  bottom:32px;
+  width:122px;
+  height:54px;
+  padding:0 12px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:6px;
+  border:1px solid #eaded8;
+  border-radius:16px;
+  background:rgba(255,253,250,.94);
+  transform:rotate(-2deg);
+}
+.home2-dot{width:16px;height:16px;border-radius:50%;display:block}
+.home2-dot-rose{background:#ead4dc}
+.home2-dot-lilac{background:#e8e2f0}
+.home2-dot-olive{background:#dfe7dd}
+.home2-dot-sand{background:#f0e2d6}
+
+/* Limpieza de elementos de una versión anterior */
+.home2-pen,.home2-spark{display:none!important}
+
 .home2-portals{padding:8px 0 82px}
 .home2-cards{gap:22px}
 .home2-card{min-height:330px;padding:32px}
@@ -20,34 +138,69 @@
 
 @media(max-width:1050px){
   .home2-collage{max-width:470px}
-  .home2-paper-main{width:285px}
-  .home2-paper-note{left:-18px}
+  .home2-paper-main{right:16px}
+  .home2-orb-blush{right:0}
 }
 
 @media(max-width:900px){
   .home2-hero{padding:56px 0 42px}
   .home2-hero-grid{gap:36px}
-  .home2-collage{justify-self:start;max-width:500px;min-height:440px;margin-top:4px}
-  .home2-paper-main{right:24px;top:20px}
-  .home2-paper-note{left:0;bottom:12px}
-  .home2-pen{left:52px;top:64px}
-  .home2-spark.one{right:2px}
-  .home2-spark.two{left:22px}
+  .home2-collage{justify-self:start;max-width:500px;min-height:400px;margin-top:4px}
+  .home2-paper-main{right:40px;top:55px}
+  .home2-orb-blush{right:18px}
+  .home2-palette{right:18px}
   .home2-portals{padding-top:12px}
 }
 
 @media(max-width:600px){
   .home2-hero{padding:44px 0 34px}
-  .home2-collage{min-height:390px;max-width:100%;margin-top:10px}
-  .home2-paper-main{right:0;top:18px;width:245px;min-height:315px;padding:27px 23px}
-  .home2-paper-main:before{left:22px;right:22px;top:78px}
-  .home2-paper-quote{margin-top:66px;font-size:1.38rem;line-height:1.34}
-  .home2-paper-sign{margin-top:36px}
-  .home2-paper-note{left:-4px;bottom:0;width:145px;padding:19px 17px;font-size:.94rem}
-  .home2-paper-note:before{left:42px;width:58px}
-  .home2-pen{left:30px;top:46px;width:104px}
-  .home2-spark.one{right:-2px;top:0}
-  .home2-spark.two{left:8px;top:180px}
+  .home2-collage{min-height:330px;max-width:100%;margin-top:14px}
+
+  .home2-orb-blush{
+    width:145px;
+    height:145px;
+    right:-8px;
+    top:30px;
+  }
+  .home2-orb-lilac{
+    width:132px;
+    height:132px;
+    left:28px;
+    bottom:22px;
+  }
+
+  .home2-paper-main{
+    right:4px;
+    top:58px;
+    width:238px;
+    min-height:162px;
+    padding:22px 20px 20px;
+    border-radius:15px;
+  }
+  .home2-paper-label{font-size:.54rem}
+  .home2-paper-quote{margin-top:21px;font-size:1.28rem;line-height:1.18}
+  .home2-paper-sign{margin-top:16px;font-size:.9rem}
+
+  .home2-paper-note{
+    left:0;
+    top:10px;
+    width:116px;
+    padding:14px 13px;
+    border-radius:12px;
+  }
+  .home2-paper-note strong{font-size:.9rem;margin-bottom:6px}
+  .home2-paper-note span{font-size:.62rem}
+
+  .home2-palette{
+    right:0;
+    bottom:18px;
+    width:104px;
+    height:46px;
+    gap:5px;
+    border-radius:14px;
+  }
+  .home2-dot{width:14px;height:14px}
+
   .home2-card{min-height:auto;padding:27px 25px}
   .home2-about{padding:60px 0}
   .home2-now{padding:58px 0}
