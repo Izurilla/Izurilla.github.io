@@ -5,21 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Irene Zurilla · Escritora</title>
   <meta name="description" content="Web oficial de Irene Zurilla, autora de literatura infantil y narrativa para adultos.">
-  <meta name="theme-color" content="#f5f0e8">
+  <meta name="theme-color" content="#fbf7f1">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header">
     <div class="wrap header-inner">
-      <a class="brand" href="#inicio">
+      <a class="brand" href="#inicio" aria-label="Irene Zurilla, inicio">
         <span class="brand-name">Irene Zurilla</span>
-        <span class="brand-role">Escritora</span>
+        <span class="brand-role">escritora</span>
       </a>
+
       <button class="menu-btn" aria-label="Abrir menú" aria-expanded="false">☰</button>
       <nav class="nav" aria-label="Navegación principal">
         <a href="#sobre-mi">Sobre mí</a>
         <a href="#universos">Mis universos</a>
-        <a href="#cuaderno">Cuaderno de autora</a>
+        <a href="#cuaderno">Cuaderno</a>
         <a href="#contacto">Contacto</a>
       </nav>
     </div>
@@ -29,42 +30,65 @@
     <section class="hero section">
       <div class="wrap hero-grid">
         <div class="hero-copy reveal">
-          <p class="eyebrow">Autora · Narrativa</p>
-          <h1>Escribo, leo,<br><em>observo.</em></h1>
+          <div class="soft-label">✦ El estudio de Irene</div>
+          <h1>Escribo,<br>leo, <em>observo.</em></h1>
           <p class="lead">Historias que nacen de una imagen, un detalle o una pregunta y terminan abriendo una puerta hacia algo inesperado.</p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#universos">Descubrir mis historias</a>
+            <a class="btn btn-primary" href="#universos">Entrar en mis historias</a>
             <a class="text-link" href="#sobre-mi">Conocerme mejor ↘</a>
           </div>
+          <div class="hero-notes" aria-label="Tres rasgos del proceso creativo">
+            <span>ideas</span><span>cuadernos</span><span>historias</span>
+          </div>
         </div>
 
-        <div class="hero-visual reveal" aria-label="Composición editorial decorativa">
+        <div class="hero-visual reveal" aria-label="Composición inspirada en un archivo creativo">
+          <div class="blob blob-one"></div>
+          <div class="blob blob-two"></div>
+
           <div class="desk-card main-card">
             <span class="tiny">CUADERNO DE AUTORA</span>
-            <p>“Nada se pierde.<br>Todo puede convertirse<br>en una historia.”</p>
+            <p>“Todo puede empezar<br>con una imagen.”</p>
             <span class="signature">Irene Zurilla</span>
           </div>
-          <div class="desk-card note-card">ideas<br>que empiezan<br>en pequeño</div>
-          <div class="accent-line"></div>
+
+          <div class="desk-card note-card">
+            <span class="pin"></span>
+            <strong>En proceso</strong>
+            <p>historias que todavía guardan secretos</p>
+          </div>
+
+          <div class="desk-card color-card">
+            <span></span><span></span><span></span><span></span>
+            <small>paleta de ideas</small>
+          </div>
+
+          <div class="mini-sticker sticker-one">leer</div>
+          <div class="mini-sticker sticker-two">mirar</div>
         </div>
       </div>
     </section>
 
-    <section class="manifesto">
-      <div class="wrap narrow reveal">
+    <section class="manifesto section-lite">
+      <div class="wrap manifesto-card reveal">
+        <span class="quote-mark">“</span>
         <p>Escribo sobre lo cercano: una fotografía, una conversación, una calle, un recuerdo. Me interesa ese instante en el que lo cotidiano se desplaza apenas unos centímetros y ya no vuelve a ser exactamente lo mismo.</p>
+        <span class="scribble">observar · guardar · transformar</span>
       </div>
     </section>
 
-    <section class="section" id="sobre-mi">
+    <section class="section about-section" id="sobre-mi">
       <div class="wrap two-col">
         <div class="section-title reveal">
-          <p class="eyebrow">Sobre mí</p>
+          <p class="eyebrow">01 · Sobre mí</p>
           <h2>La historia empieza mucho antes de escribirla.</h2>
+          <div class="little-card">Una vida normal también está llena de material narrativo.</div>
         </div>
-        <div class="body-copy reveal">
+
+        <div class="body-copy glass-card reveal">
           <p>Soy Irene Zurilla, escritora de literatura infantil y narrativa para adultos. Leo desde siempre y escribo desde esa mezcla de curiosidad, memoria y observación que convierte una escena cualquiera en el principio de una historia.</p>
           <p>Me interesan los personajes corrientes, los pequeños gestos y las situaciones reconocibles que, poco a poco, empiezan a llevar al lector hacia otro lugar.</p>
+          <div class="inline-note">Mi forma de trabajar: <strong>menos ruido, más detalles.</strong></div>
         </div>
       </div>
     </section>
@@ -73,62 +97,79 @@
       <div class="wrap">
         <div class="section-head reveal">
           <div>
-            <p class="eyebrow">Mis universos</p>
+            <p class="eyebrow">02 · Mis universos</p>
             <h2>Historias para edades distintas.<br>La misma curiosidad detrás.</h2>
           </div>
           <p>Una casa de autora con espacio para todos los proyectos, sin encerrar la escritura en un único género.</p>
         </div>
 
         <div class="cards">
-          <article class="card light reveal">
-            <span class="num">01</span>
+          <article class="card blush reveal">
+            <div class="card-top"><span class="num">01</span><span class="dot">●</span></div>
             <div>
               <p class="kicker">Literatura infantil</p>
               <h3>Cuentos de Tita Nene</h3>
               <p>Historias nacidas para despertar la curiosidad, jugar con la imaginación y acercar a los más pequeños al placer de los libros.</p>
             </div>
+            <span class="card-tag">imaginación</span>
           </article>
 
-          <article class="card dark reveal">
-            <span class="num">02</span>
+          <article class="card lilac reveal">
+            <div class="card-top"><span class="num">02</span><span class="dot">●</span></div>
             <div>
               <p class="kicker">Narrativa adulta</p>
               <h3>Historias que inquietan</h3>
               <p>Memoria, identidad, misterio y decisiones capaces de cambiar una vida. Proyectos en desarrollo que prefieren guardar todavía algunos secretos.</p>
             </div>
+            <span class="card-tag">misterio</span>
           </article>
 
-          <article class="card paper reveal">
-            <span class="num">03</span>
+          <article class="card sage reveal">
+            <div class="card-top"><span class="num">03</span><span class="dot">●</span></div>
             <div>
               <p class="kicker">Lecturas</p>
               <h3>El Marcapáginas Verde</h3>
               <p>Mi rincón lector: libros, hallazgos y recomendaciones contadas desde la experiencia de quien lee por placer.</p>
             </div>
+            <span class="card-tag">lecturas</span>
           </article>
         </div>
       </div>
     </section>
 
     <section class="section notebook" id="cuaderno">
-      <div class="wrap two-col">
-        <div class="section-title reveal">
-          <p class="eyebrow">Cuaderno de autora</p>
-          <h2>El proceso también forma parte de la historia.</h2>
+      <div class="wrap notebook-grid">
+        <div class="notebook-visual reveal">
+          <div class="paper-sheet paper-back"></div>
+          <div class="paper-sheet paper-front">
+            <span class="tiny">CUADERNO DE AUTORA</span>
+            <h3>El proceso también cuenta.</h3>
+            <ul>
+              <li>ideas que aparecen sin avisar</li>
+              <li>libros y lugares que dejan huella</li>
+              <li>pruebas, dudas y hallazgos</li>
+              <li>historias que todavía están creciendo</li>
+            </ul>
+            <span class="hand-note">sin postureo, desde dentro</span>
+          </div>
         </div>
-        <div class="body-copy reveal">
-          <p>Aquí irán apareciendo fragmentos del camino: proyectos en marcha, lecturas, hallazgos, bloqueos, pruebas, dudas y todo lo que sucede antes de que una historia llegue a su forma definitiva.</p>
-          <p class="muted">Esta sección crecerá poco a poco, sin convertir la web en un blog complejo.</p>
+
+        <div class="section-title reveal">
+          <p class="eyebrow">03 · Cuaderno de autora</p>
+          <h2>Lo que ocurre antes de que exista el libro.</h2>
+          <p class="section-copy">Aquí irán apareciendo fragmentos del camino: proyectos en marcha, lecturas, hallazgos, bloqueos, pruebas y todo lo que sucede antes de que una historia llegue a su forma definitiva.</p>
         </div>
       </div>
     </section>
 
     <section class="section now">
-      <div class="wrap now-grid reveal">
-        <div>
-          <p class="eyebrow">Ahora mismo</p>
-          <h2>Una autora en movimiento.</h2>
+      <div class="wrap now-shell reveal">
+        <div class="now-heading">
+          <p class="eyebrow">04 · Ahora mismo</p>
+          <h2>Una autora<br>en movimiento.</h2>
+          <span class="status-pill">● en proceso</span>
         </div>
+
         <div class="now-list">
           <div><span>01</span><p>Preparando nuevos pasos para mi proyecto de literatura infantil.</p></div>
           <div><span>02</span><p>Desarrollando narrativa para adultos sin enseñar todavía todo lo que ocurre detrás.</p></div>
@@ -139,17 +180,22 @@
 
     <section class="section contact" id="contacto">
       <div class="wrap contact-card reveal">
-        <p class="eyebrow">Contacto profesional</p>
-        <h2>¿Hablamos?</h2>
-        <p>Editoriales, librerías, medios, actividades culturales y colaboraciones relacionadas con los libros y la escritura.</p>
-        <p class="muted">En la siguiente versión añadiremos aquí el correo profesional, redes y dossier de autora.</p>
+        <div>
+          <p class="eyebrow">05 · Contacto</p>
+          <h2>¿Hablamos?</h2>
+        </div>
+        <div class="contact-copy">
+          <p>Editoriales, librerías, medios, actividades culturales y colaboraciones relacionadas con los libros y la escritura.</p>
+          <p class="muted">La web está creciendo. En la siguiente versión añadiremos aquí contacto profesional, redes y dossier de autora.</p>
+        </div>
+        <div class="contact-stamp">I Z<br><small>autora</small></div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
     <div class="wrap footer-inner">
-      <div><strong>Irene Zurilla</strong><span>Escritora</span></div>
+      <div><strong>Irene Zurilla</strong><span>Escribo · leo · observo</span></div>
       <p>© <span id="year"></span> Irene Zurilla</p>
     </div>
   </footer>
