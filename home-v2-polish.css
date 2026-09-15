@@ -1,0 +1,55 @@
+/* Ajustes de acabado de la portada v2: más aire en el hero y collage editorial menos agolpado */
+.home2-hero{padding:72px 0 58px}
+.home2-hero-grid{grid-template-columns:1.08fr .92fr;gap:56px}
+.home2-collage{min-height:500px;max-width:520px;width:100%;justify-self:end;overflow:visible}
+.home2-paper-main{right:0;top:28px;width:300px;min-height:365px;padding:36px 32px;transform:rotate(2deg)}
+.home2-paper-main:before{left:30px;right:30px;top:88px;bottom:28px}
+.home2-paper-quote{margin-top:82px;font-size:1.7rem;line-height:1.34}
+.home2-paper-sign{margin-top:46px}
+.home2-paper-note{left:-34px;bottom:20px;width:178px;padding:23px 22px;transform:rotate(-5deg);font-size:1.08rem;line-height:1.42;z-index:3}
+.home2-paper-note:before{left:52px;width:66px}
+.home2-pen{left:38px;top:82px;width:138px;transform:rotate(-24deg)}
+.home2-spark.one{right:-16px;top:4px}
+.home2-spark.two{left:-2px;top:214px}
+.home2-portals{padding:8px 0 82px}
+.home2-cards{gap:22px}
+.home2-card{min-height:330px;padding:32px}
+.home2-about{padding:86px 0}
+.home2-now{padding:82px 0}
+.home2-contact{padding:84px 0 92px}
+
+@media(max-width:1050px){
+  .home2-collage{max-width:470px}
+  .home2-paper-main{width:285px}
+  .home2-paper-note{left:-18px}
+}
+
+@media(max-width:900px){
+  .home2-hero{padding:56px 0 42px}
+  .home2-hero-grid{gap:36px}
+  .home2-collage{justify-self:start;max-width:500px;min-height:440px;margin-top:4px}
+  .home2-paper-main{right:24px;top:20px}
+  .home2-paper-note{left:0;bottom:12px}
+  .home2-pen{left:52px;top:64px}
+  .home2-spark.one{right:2px}
+  .home2-spark.two{left:22px}
+  .home2-portals{padding-top:12px}
+}
+
+@media(max-width:600px){
+  .home2-hero{padding:44px 0 34px}
+  .home2-collage{min-height:390px;max-width:100%;margin-top:10px}
+  .home2-paper-main{right:0;top:18px;width:245px;min-height:315px;padding:27px 23px}
+  .home2-paper-main:before{left:22px;right:22px;top:78px}
+  .home2-paper-quote{margin-top:66px;font-size:1.38rem;line-height:1.34}
+  .home2-paper-sign{margin-top:36px}
+  .home2-paper-note{left:-4px;bottom:0;width:145px;padding:19px 17px;font-size:.94rem}
+  .home2-paper-note:before{left:42px;width:58px}
+  .home2-pen{left:30px;top:46px;width:104px}
+  .home2-spark.one{right:-2px;top:0}
+  .home2-spark.two{left:8px;top:180px}
+  .home2-card{min-height:auto;padding:27px 25px}
+  .home2-about{padding:60px 0}
+  .home2-now{padding:58px 0}
+  .home2-contact{padding:60px 0 70px}
+}
